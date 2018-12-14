@@ -22,6 +22,6 @@ require("./app/routing/api-routes.js")(app);
 require("./app/routing/html-routes.js")(app);
 
 
-app.listenerCount(PORT, function(){
-    console.log("App Listening on PORT" + PORT)
+app.listen(PORT, function(){
+    console.log("App Listening on PORT " + PORT)
 })
